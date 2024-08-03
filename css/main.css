@@ -6,3 +6,60 @@
 * {
     font-family: yekan;
 }
+
+:root {
+    --base-purple: #d6a5ff;
+    /* Example custom purple color */
+    --darker-purple: #730fc3;
+    --whight: #ffffff;
+}
+
+.navbar {
+    background-color: var(--base-purple);
+}
+
+.navbar .btn,
+.navbar .form-control {
+    margin: 0 5px;
+
+}
+
+.header-btn {
+    background-color: var(--darker-purple);
+    color: var(--whight);
+}
+
+.profile-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #e8e8e8;
+}
+
+.profile-section img {
+    width: 100px;
+    height: 500px;
+}
+
+.card {
+    text-align: center;
+    margin: 30px 30px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: var(--base-purple);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .links {
+    text-align: left;
+}
+
+.footer .contact {
+    text-align: right;
+}
