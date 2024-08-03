@@ -27,6 +27,8 @@
 .header-btn {
     background-color: var(--darker-purple);
     color: var(--whight);
+    width: 100%;
+    margin: 10px;
 }
 
 .profile-section {
