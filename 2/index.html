@@ -1,285 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Redesign Shopping Page</title>
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <style>
-      :root {
-        --custom-purple: #d6a5ff; /* Example custom purple color */
-      }
-      .navbar {
-        background-color: var(--custom-purple);
-      }
-      .navbar .btn,
-      .navbar .form-control {
-        margin: 0 5px;
-        background-color: #730fc3;
-      }
-      .profile-section {
-        text-align: center;
-        padding: 20px;
-        background-color: #e8e8e8;
-      }
-      .profile-section img {
-        width: 100px;
-        height: 500px;
-      }
-      .card {
-        text-align: center;
-        margin: 30px 30px;
-      }
-      .card img {
-        width: 100%;
-        height: auto;
-      }
-      .footer {
-        background-color: var(--custom-purple);
-        padding: 20px;
-        text-align: center;
-      }
-      .footer .links {
-        text-align: left;
-      }
-      .footer .contact {
-        text-align: right;
-      }
+        :root {
+            --custom-purple: #d6a5ff; /* Example custom purple color */
+        }
+
+        .navbar {
+            background-color: var(--custom-purple);
+        }
+
+        .navbar .btn,
+        .navbar .form-control {
+            margin: 0 5px;
+            background-color: #730fc3;
+        }
+
+        .profile-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #e8e8e8;
+        }
+
+        .profile-section img {
+            width: 100px;
+            height: 500px;
+        }
+
+        .card {
+            text-align: center;
+            margin: 30px 30px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            background-color: var(--custom-purple);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer .links {
+            text-align: left;
+        }
+
+        .footer .contact {
+            text-align: right;
+        }
     </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-lg">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-lg">
         <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse zindex-dropdown"
-          id="navbarSupportedContent"
+                class="collapse navbar-collapse zindex-dropdown"
+                id="navbarSupportedContent"
         >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <button class="btn">ورود</button>
-            </li>
-            <li class="nav-item">
-              <button class="btn">مشاوره</button>
-            </li>
-            <li class="nav-item">
-              <button class="btn">
-                <i class="fas fa-shopping-cart"></i>
-              </button>
-            </li>
-            <li class="nav-item">
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search Box"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
-            </li>
-          </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <button class="btn">ورود</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn">مشاوره</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <form class="d-flex" role="search">
+                        <input
+                                class="form-control me-2"
+                                type="search"
+                                placeholder="Search Box"
+                                aria-label="Search"
+                        />
+                        <button class="btn btn-outline-success" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </li>
+            </ul>
 
-          <button class="btn btn-outline-secondary">
-            <i class="fas fa-user"></i>
-          </button>
-          <img
-            src="https://via.placeholder.com/40"
-            class="rounded-circle ml-2"
-            alt="Profile"
-          />
+            <button class="btn btn-outline-secondary">
+                <i class="fas fa-user"></i>
+            </button>
+            <img
+                    src="https://via.placeholder.com/40"
+                    class="rounded-circle ml-2"
+                    alt="Profile"
+            />
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide profile-section"
-      data-ride="carousel"
-    >
-      <ol class="carousel-indicators">
+<div
+        id="carouselExampleIndicators"
+        class="carousel slide profile-section"
+        data-ride="carousel"
+>
+    <ol class="carousel-indicators">
         <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          class="active"
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
         ></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
+    </ol>
+    <div class="carousel-inner">
         <div class="carousel-item active">
-          <img
-            class="d-block w-100"
-            src="https://via.placeholder.com/800x300"
-            alt="First slide"
-          />
+            <img
+                    class="d-block w-100"
+                    src="https://via.placeholder.com/800x300"
+                    alt="First slide"
+            />
         </div>
         <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://via.placeholder.com/800x300"
-            alt="Second slide"
-          />
+            <img
+                    class="d-block w-100"
+                    src="https://via.placeholder.com/800x300"
+                    alt="Second slide"
+            />
         </div>
         <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://via.placeholder.com/800x300"
-            alt="Third slide"
-          />
+            <img
+                    class="d-block w-100"
+                    src="https://via.placeholder.com/800x300"
+                    alt="Third slide"
+            />
         </div>
-      </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="prev"
-      >
+    </div>
+    <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+    >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="next"
-      >
+    </a>
+    <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+    >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>
-    </div>
+    </a>
+</div>
 
+<div class="container">
+    <div class="row p-2">
+        <div class="col-md-4">
+            <div class="card">
+                <img
+                        src="https://via.placeholder.com/150"
+                        class="card-img-top"
+                        alt="..."
+                />
+                <div class="card-body">
+                    <h5 class="card-title">نام استاد</h5>
+                    <p class="card-text">تخصص</p>
+                    <a href="#" class="">مشاهده پروفایل</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img
+                        src="https://via.placeholder.com/150"
+                        class="card-img-top"
+                        alt="..."
+                />
+                <div class="card-body">
+                    <h5 class="card-title">نام استاد</h5>
+                    <p class="card-text">تخصص</p>
+                    <a href="#" class="btn btn-primary">مشاهده پروفایل</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img
+                        src="https://via.placeholder.com/150"
+                        class="card-img-top"
+                        alt="..."
+                />
+                <div class="card-body">
+                    <h5 class="card-title">نام استاد</h5>
+                    <p class="card-text">تخصص</p>
+                    <a href="#" class="btn btn-primary">مشاهده پروفایل</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img
+                        src="https://via.placeholder.com/150"
+                        class="card-img-top"
+                        alt="..."
+                />
+                <div class="card-body">
+                    <h5 class="card-title">نام استاد</h5>
+                    <p class="card-text">تخصص</p>
+                    <a href="#" class="btn btn-primary">مشاهده پروفایل</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img
+                        src="https://via.placeholder.com/150"
+                        class="card-img-top"
+                        alt="..."
+                />
+                <div class="card-body">
+                    <h5 class="card-title">نام استاد</h5>
+                    <p class="card-text">تخصص</p>
+                    <a href="#" class="btn btn-primary">مشاهده پروفایل</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img
+                        src="https://via.placeholder.com/150"
+                        class="card-img-top"
+                        alt="..."
+                />
+                <div class="card-body">
+                    <h5 class="card-title">نام استاد</h5>
+                    <p class="card-text">تخصص</p>
+                    <a href="#" class="btn btn-primary">مشاهده پروفایل</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
     <div class="container">
-      <div class="row p-2">
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="https://via.placeholder.com/150"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">نام استاد</h5>
-              <p class="card-text">تخصص</p>
-              <a href="#" class="">مشاهده پروفایل</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="https://via.placeholder.com/150"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">نام استاد</h5>
-              <p class="card-text">تخصص</p>
-              <a href="#" class="btn btn-primary">مشاهده پروفایل</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="https://via.placeholder.com/150"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">نام استاد</h5>
-              <p class="card-text">تخصص</p>
-              <a href="#" class="btn btn-primary">مشاهده پروفایل</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="https://via.placeholder.com/150"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">نام استاد</h5>
-              <p class="card-text">تخصص</p>
-              <a href="#" class="btn btn-primary">مشاهده پروفایل</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="https://via.placeholder.com/150"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">نام استاد</h5>
-              <p class="card-text">تخصص</p>
-              <a href="#" class="btn btn-primary">مشاهده پروفایل</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="https://via.placeholder.com/150"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">نام استاد</h5>
-              <p class="card-text">تخصص</p>
-              <a href="#" class="btn btn-primary">مشاهده پروفایل</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="container">
         <div class="row">
-          <div class="col-md-4 links">
-            <p>تماس با ما</p>
-            <p>آدرس</p>
-          </div>
-          <div class="col-md-4">
-            <a href="#">Link</a><br />
-            <a href="#">Link</a><br />
-            <a href="#">Link</a>
-          </div>
-          <div class="col-md-4 contact">
-            <img src="https://via.placeholder.com/50" alt="Profile" />
-          </div>
+            <div class="col-md-4 links">
+                <p>تماس با ما</p>
+                <p>آدرس</p>
+            </div>
+            <div class="col-md-4">
+                <a href="#">Link</a><br/>
+                <a href="#">Link</a><br/>
+                <a href="#">Link</a>
+            </div>
+            <div class="col-md-4 contact">
+                <img src="https://via.placeholder.com/50" alt="Profile"/>
+            </div>
         </div>
-      </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
